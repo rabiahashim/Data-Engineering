@@ -7,7 +7,7 @@ import datetime
 
 # Fetch Data from Google sheet
 def get_complains_data():
-    complains_data_url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQZiq18p_LgTk99DXGehERcTuXWmQEe3RpPWBRDElEeRLyQUfrHpKT6cOKoNCH9Og/pub?output=xlsx'
+    complains_data_url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQZiq18p_LgTk99DXGehERcTuXWmQEe3RpPWBRDElEeRLyQUfrHpKT6cOKoNCH9Og/pub?output=xls'
     df_complain=pd.read_excel(complains_data_url)
     df_complain.replace(np.nan,0,inplace=True)
     df_complain['Month_Year']=pd.to_datetime(df_complain['date_received']).dt.strftime('%m-%Y')
