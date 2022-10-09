@@ -1,6 +1,3 @@
-import _tkinter
-from email.policy import default
-from tkinter.messagebox import YES
 import pandas as pd
 import numpy as np
 from plotly.subplots import make_subplots
