@@ -86,7 +86,7 @@ issue=df_complain['issue']
 sub_issue=df_complain['sub_issue']
 count_of_complains=df_complain['Count_of_Complaint_ID']
 fig_tree=px.treemap(df_complain,path=['state','issue','sub_issue'],values=count_of_complains,
-                color_continuous_scale=['red','green','yellow'],title=' </b> Number Over Issue and Sub Issue </b>')
+                color_continuous_scale=['red','green','yellow'],title= "<b> Number Over Issue and Sub Issue </b>")
 
 fig_tree.update_layout(title_font_size=15,title_font_family='Arial')
 
